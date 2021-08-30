@@ -15,21 +15,29 @@
     font-weight: regular;
 }
 @import url(./media.css);
-html * {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+div {
     font-family: TwitterChirp;
 }
 .twitter {
     display: flex;
     flex-direction: row;
     min-height: 100vh;
-    width: 100vh;
 }
 .header-container {
     display: flex;
     flex-direction: row;
     flex: 1;
     height: 100vh;
-    position: sticky;
+    /* position: sticky; */
     top: 0;
 }
 .main-container {
@@ -51,6 +59,7 @@ html * {
 .trending-area-container {
     display: flex;
     flex: 5;
+    flex-direction: column;
 }
 .twitter-logo {
     height: 3rem;
@@ -122,7 +131,7 @@ html * {
     border-radius: 30px;
 }
 .t-button {
-    width: 100%;
+    /* width: 100%; */
     color: #fff;
     background: rgb(29, 161, 242);
     padding: 20px 10px;
@@ -174,13 +183,12 @@ html * {
     display: flex;
     padding: 20px 30px;
     justify-content: space-between;
-    position: sticky;
+    /* position: sticky; */
     color: black;
     font-weight: 800;
     border-bottom: 1px solid rgb(239, 243, 244);
     top: 0;
     background: #fff;
-    margin-top: -1px;
 }
 .input-post-container,
 .post-media,
@@ -216,7 +224,7 @@ html * {
     margin: 10px;
 }
 .post-card {
-    width: 100%;
+    /* width: 100%; */
 }
 .post-box {
     margin-top: 10px;
@@ -267,8 +275,6 @@ article {
     width: 60%;
 }
 .artiest-info-container {
-    display: flex;
-    justify-content: space-between;
     margin: 2px 0 20px 0;
     line-height: 1.7rem;
 }
@@ -282,7 +288,7 @@ article {
 .article-post-discussion-option {
     display: flex;
     justify-content: space-between;
-    width: 60%;
+    /* width: 60%; */
     margin: 5px 0;
 }
 .article-details {
@@ -290,6 +296,7 @@ article {
 }
 .artiest-info {
     display: flex;
+    justify-content: space-between;
 }
 
 .f-800 {
@@ -358,38 +365,40 @@ article:hover {
 }
 .right-nav-container {
     margin: 0 50px 10px 20px;
-    position: relative;
+    /* position: sticky; */
+    top: 0;
 }
 .right-nav-header {
-    padding: 15px 0 30px 0;
-    position: sticky;
+    padding: 15px 39px 30px 21px;
+    /* position: sticky; */
     top: 0;
     background: #fff;
+    z-index: 1;
 }
 .input-search {
     padding: 6px 45px;
     border-radius: 25px;
-    border: none;
     height: 30px;
-    width: 260px;
+    /* width: 260px; */
     background: rgb(239 243 244);
+    border: 1px solid #fff;
 }
 .input-search:focus-within {
     background: #fff;
     border: 1px solid rgb(27, 149, 224);
 }
 .search-area-container {
-    position: relative;
+    /* position: relative; */
 }
 .search-icon-container {
-    position: absolute;
+    /* position: absolute; */
     padding: 8px;
     top: 5px;
     left: 5px;
 }
 .trending-post-container {
     padding: 20px 0 1px 0;
-    width: 350px;
+    /* width: 350px; */
     background: #f7f9f9;
     border-radius: 10px;
     border: none;
@@ -476,7 +485,20 @@ footer .trending-post-container {
     fill: rgb(27, 149, 224);
     display: none;
 }
-@media only screen and (max-width: 600px) {
+.more-icon {
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    padding: 5px;
+}
+.more-icon svg {
+    height: 1rem;
+}
+.more-icon:hover {
+    fill: rgb(27, 149, 224);
+    background: rgb(186, 221, 243);
+}
+/* @media only screen and (max-width: 800px) {
     .main-container {
         display: block;
     }
@@ -504,4 +526,4 @@ footer .trending-post-container {
     .user-profile .profile-account {
         display: none;
     }
-}
+} */
