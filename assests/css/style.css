@@ -37,7 +37,7 @@ div {
     flex-direction: row;
     flex: 1;
     height: 100vh;
-    /* position: sticky; */
+    position: sticky;
     top: 0;
 }
 .main-container {
@@ -183,7 +183,7 @@ div {
     display: flex;
     padding: 20px 30px;
     justify-content: space-between;
-    /* position: sticky; */
+    position: sticky;
     color: black;
     font-weight: 800;
     border-bottom: 1px solid rgb(239, 243, 244);
@@ -365,12 +365,12 @@ article:hover {
 }
 .right-nav-container {
     margin: 0 50px 10px 20px;
-    /* position: sticky; */
+    position: sticky;
     top: 0;
 }
 .right-nav-header {
     padding: 15px 39px 30px 21px;
-    /* position: sticky; */
+    position: sticky;
     top: 0;
     background: #fff;
     z-index: 1;
@@ -388,17 +388,17 @@ article:hover {
     border: 1px solid rgb(27, 149, 224);
 }
 .search-area-container {
-    /* position: relative; */
+    position: relative;
 }
 .search-icon-container {
-    /* position: absolute; */
+    position: absolute;
     padding: 8px;
     top: 5px;
     left: 5px;
 }
 .trending-post-container {
     padding: 20px 0 1px 0;
-    /* width: 350px; */
+    width: 350px;
     background: #f7f9f9;
     border-radius: 10px;
     border: none;
